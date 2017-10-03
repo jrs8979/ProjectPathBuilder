@@ -170,7 +170,7 @@ public class NRH5 implements PlayerModule {
         return turn;
     }
     /**
-     *
+     * Determines whether is is possible for the indicated player to win after the specified number of total moves.
      * @param playerId- player to determine winnable status for
      * @param whoseTurn- player whose turn it is currently
      * @param numMoves- num of total moves by which the player of interest must be able to guarantee victory to
@@ -389,7 +389,7 @@ public class NRH5 implements PlayerModule {
         int y = move.getCol();
         int id = m.getPlayerId();
         board[x][y] = id;
-    } //comment
+    }
 
     /* Unnecessary with this code setup */
     @Override
@@ -531,7 +531,11 @@ public class NRH5 implements PlayerModule {
         }
         return false;
     }
-
+    
+    /**
+     * String representation of the game board 2D array
+     * @return result- the string representation of the game board
+     */
     @Override
     public String toString() {
         String result = "";
