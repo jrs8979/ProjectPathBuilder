@@ -391,7 +391,7 @@ public class NRH5 implements PlayerModule {
         board[x][y] = id;
     } //comment
 
-    /* Dont know what it do */
+    /* Unnecessary with this code setup */
     @Override
     public void otherPlayerInvalidated(){}
 
