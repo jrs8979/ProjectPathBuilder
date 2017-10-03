@@ -1,0 +1,102 @@
+# CONFIG FILE FOR PATHBUILDER PROJECT PART 3 TESTING
+# Blank lines are ignored.  Lines beginning with # are ignored.
+# All other lines are processed.
+
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+# NOTE: THIS CONFIG FILE SHOULD NOT BE MODIFIED.
+# THE PARAMETERS AND CORRESPONDING RESULT ARE A SPECIFIC
+# TEST PROVIDED FOR YOU TO CHECK YOUR PART 3 SOLUTION.
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+# This config file format is intended for use with
+# Part3Test.java.
+
+# NOTE: the GUI is not used for part 3 testing.
+
+# NOTE: PLAYERS is not used in PART 3 config file.  The player
+# to be tested is instead provided via a command line argument
+# when running the program.  Also, TIMELIMIT is not specified
+# in the config file, but internally a 10 second limit
+# is used to limit the allowed computation by the player
+# for any method call.
+
+# PART must be present with value 3 to indicate that this
+# file is appropriate for PART 3 testing
+PART 3
+
+# DIM is used to indicate the size of the smaller dimension
+# of the grid of nodes for each player.
+# It must have an integer value in the range 3-20.
+# The larger dimension always has value DIM+1.
+# Both players nodes can be placed on an overall grid of
+# size (2*DIM+1) by (2*DIM+1).
+# DIM has a default value of 6 if it is not specified in
+# the configuration file.
+DIM 5
+
+# a PREMOVE is used to get the game started with
+# a specific move before calling the
+# HUMAN / player modules for moves.
+# a PREMOVE must have three comma-separated values,
+# with no spaces, indicating row, column and player id
+# for the move.
+# Multiple PREMOVE lines are allowed, and are processed in order.
+# An invalid PREMOVE will cause a game error.
+# PREMOVE lines are optional.
+PREMOVE 5,7,1
+PREMOVE 1,5,2
+PREMOVE 5,1,1
+PREMOVE 4,8,2
+PREMOVE 8,4,1
+PREMOVE 9,9,2
+PREMOVE 6,2,1
+PREMOVE 3,1,2
+PREMOVE 1,7,1
+PREMOVE 7,7,2
+PREMOVE 2,6,1
+PREMOVE 6,8,2
+PREMOVE 1,3,1
+PREMOVE 7,5,2
+PREMOVE 3,9,1
+PREMOVE 6,6,2
+PREMOVE 1,1,1
+PREMOVE 3,3,2
+PREMOVE 5,5,1
+PREMOVE 4,2,2
+PREMOVE 9,1,1
+PREMOVE 5,3,2
+PREMOVE 6,4,1
+
+
+
+# ID is used to indicate which player is being
+# queried.  It must have value 1 or 2.  It indicates
+# which player is checked for winnability.
+ID 2
+
+# MOVES is used to indicate how many total moves
+# maximum are allowed before the queried player
+# must be able to guarantee victory.  The player
+# to go next is determined by the premoves.  If
+# there are no specified premoves, player 1 gets
+# the first of these moves.  Otherwise, it is
+# the player who didn't make the last premove.
+# MOVES must have a value greater than or equal to 0.
+MOVES 5
+
+# RESULT for part 3 contains a single boolean value.
+# This is a groundtruth value for this test indicating
+# whether the specified player can win in the
+# given number of total moves
+RESULT false
+
+# COMMENT----------------------------------------------
+# a little more complicated.  Player1 is in winning
+# position.  It's player2's turn.  Player2 can delay
+# player1's victory by making good choices, but not
+# for long.  It takes only 4 total moves if player2
+# is sloppy, but optimal play by player2 will only
+# delay victory to 6 total moves.
+# Test9a shows that player1 can guarantee win in 6 total moves.
+# Test9b shows that player1 can not guarantee win in 4 total moves.
+# Test9c shows that player2 can not guarantee win in 5 total moves.

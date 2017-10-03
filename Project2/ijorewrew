@@ -1,0 +1,113 @@
+[33mcommit c52a5ad1ee624e30f387a599fd4f11d840bcb5fa[m
+Author: JScidaDesktop <jrs8979@g.rit.edu>
+Date:   Sat Apr 8 14:28:27 2017 -0400
+
+    Renamed Dijkstra to search, and optimized search method.
+
+[33mcommit ac621351daf6735af14d559e946dd9c6963a7b60[m
+Author: JScidaDesktop <jrs8979@g.rit.edu>
+Date:   Fri Apr 7 23:48:48 2017 -0400
+
+    Completed dijkstra method.
+
+[33mcommit 587b4a8032d3a219fc69144a4ce054a60c280dbc[m
+Author: JScidaDesktop <jrs8979@g.rit.edu>
+Date:   Fri Apr 7 23:18:28 2017 -0400
+
+    Got dijkstra method working with first test and second test
+
+[33mcommit 248bd3d4b41521438ef0e830e71e2461e7fc56b7[m
+Author: JScidaDesktop <jrs8979@g.rit.edu>
+Date:   Fri Apr 7 23:14:23 2017 -0400
+
+    Got dijkstra method working with first test
+
+[33mcommit d34c67a6b4b49da32886f5785f36d63062e3e071[m
+Author: JScidaDesktop <jrs8979@g.rit.edu>
+Date:   Fri Apr 7 22:32:22 2017 -0400
+
+    Completed initial config of dijkstras algorithm
+
+[33mcommit c1b5aeef4abbda5589af7c7afca357cda3eca9a1[m
+Author: JScidaDesktop <jrs8979@g.rit.edu>
+Date:   Fri Apr 7 21:17:01 2017 -0400
+
+    Completed initial config of dijkstras algorithm
+
+[33mcommit 69041b58a33928d684c4a5b24ed6e98d02cc8807[m
+Author: JScidaDesktop <jrs8979@g.rit.edu>
+Date:   Fri Apr 7 18:38:39 2017 -0400
+
+    Finished Node class
+
+[33mcommit 60a1fff8a8ba0fef684c508b5248cfe133f20d1d[m
+Author: JScidaDesktop <jrs8979@g.rit.edu>
+Date:   Fri Apr 7 18:34:34 2017 -0400
+
+    Finished initial build of node object
+
+[33mcommit 42a035d7872cb8d4b4b27a24fc99b906c6fa643f[m
+Author: JScidaDesktop <jrs8979@g.rit.edu>
+Date:   Fri Apr 7 16:13:41 2017 -0400
+
+    Made changes to allLegalMoves method, now with less lines.
+
+[33mcommit 414b2095007b870b3c6815d23ec2583101103f00[m
+Author: JScidaDesktop <jrs8979@g.rit.edu>
+Date:   Sun Mar 26 17:32:21 2017 -0400
+
+    Made changes to allLegalMoves method, now with less lines.
+
+[33mcommit fa864c51e8df919ffab2b815db53051c578adb03[m
+Author: JScidaDesktop <jrs8979@g.rit.edu>
+Date:   Sun Mar 26 17:31:17 2017 -0400
+
+    Completed base move  method
+
+[33mcommit a66ea90df64fabc7937e82cd2cb68ab7b7896865[m
+Author: JScidaDesktop <jrs8979@g.rit.edu>
+Date:   Sun Mar 26 16:55:06 2017 -0400
+
+    Completed base move  method
+
+[33mcommit c46510b75002a754a2491ef91d85852e2461bdce[m
+Author: JScidaDesktop <jrs8979@g.rit.edu>
+Date:   Sun Mar 26 16:34:01 2017 -0400
+
+    Completed allLegalMoves
+
+[33mcommit eff7553c0e3d7db1b1b3d4ce34085ab59fe83347[m
+Author: JScidaDesktop <jrs8979@g.rit.edu>
+Date:   Sun Mar 26 16:05:04 2017 -0400
+
+    Printed out game board
+
+[33mcommit 32bad8d40867b3246cf0d3f9c307cf7cf7596bcd[m
+Author: JScidaDesktop <jrs8979@g.rit.edu>
+Date:   Sun Mar 26 15:54:06 2017 -0400
+
+    Changed NRH5 to make it work with first test case.
+
+[33mcommit 5cef245c035280c4fd73461a4be616122c61dccc[m
+Author: Ryan <rxc6779@rit.edu>
+Date:   Sun Mar 26 15:40:59 2017 -0400
+
+    Completed stubbing methods for PlayerModulePart2
+
+[33mcommit 3abc9b9db2fdb600b33a68fa9f8d900149eb0395[m
+Author: Ryan <rxc6779@rit.edu>
+Date:   Sun Mar 26 15:38:37 2017 -0400
+
+    Completed stubbing methods for PlayerModulePart2
+
+[33mcommit ee82fff810029243a8a61fc824b29b1a0bb6e74f[m
+Author: JScidaDesktop <jrs8979@g.rit.edu>
+Date:   Sun Mar 26 15:04:30 2017 -0400
+
+    Initializing Remote Repo
+
+[33mcommit c2ccbe1f762e30b04c3ee5dfb0c4a71419f430d6[m
+Author: JScidaDesktop <jrs8979@g.rit.edu>
+Date:   Sun Mar 26 14:53:39 2017 -0400
+
+    Initializing Remote Repo

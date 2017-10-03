@@ -1,0 +1,81 @@
+# CONFIG FILE FOR PATHBUILDER PROJECT PART 3 TESTING
+# Blank lines are ignored.  Lines beginning with # are ignored.
+# All other lines are processed.
+
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+# NOTE: THIS CONFIG FILE SHOULD NOT BE MODIFIED.
+# THE PARAMETERS AND CORRESPONDING RESULT ARE A SPECIFIC
+# TEST PROVIDED FOR YOU TO CHECK YOUR PART 3 SOLUTION.
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+# This config file format is intended for use with
+# Part3Test.java.
+
+# NOTE: the GUI is not used for part 3 testing.
+
+# NOTE: PLAYERS is not used in PART 3 config file.  The player
+# to be tested is instead provided via a command line argument
+# when running the program.  Also, TIMELIMIT is not specified
+# in the config file, but internally a 10 second limit
+# is used to limit the allowed computation by the player
+# for any method call.
+
+# PART must be present with value 3 to indicate that this
+# file is appropriate for PART 3 testing
+PART 3
+
+# DIM is used to indicate the size of the smaller dimension
+# of the grid of nodes for each player.
+# It must have an integer value in the range 3-20.
+# The larger dimension always has value DIM+1.
+# Both players nodes can be placed on an overall grid of
+# size (2*DIM+1) by (2*DIM+1).
+# DIM has a default value of 6 if it is not specified in
+# the configuration file.
+DIM 3
+
+# a PREMOVE is used to get the game started with
+# a specific move before calling the
+# HUMAN / player modules for moves.
+# a PREMOVE must have three comma-separated values,
+# with no spaces, indicating row, column and player id
+# for the move.
+# Multiple PREMOVE lines are allowed, and are processed in order.
+# An invalid PREMOVE will cause a game error.
+# PREMOVE lines are optional.
+PREMOVE 3,1,1
+PREMOVE 1,1,2
+PREMOVE 2,4,1
+PREMOVE 5,3,2
+
+
+# ID is used to indicate which player is being
+# queried.  It must have value 1 or 2.  It indicates
+# which player is checked for winnability.
+ID 2
+
+# MOVES is used to indicate how many total moves
+# maximum are allowed before the queried player
+# must be able to guarantee victory.  The player
+# to go next is determined by the premoves.  If
+# there are no specified premoves, player 1 gets
+# the first of these moves.  Otherwise, it is
+# the player who didn't make the last premove.
+# MOVES must have a value greater than or equal to 0.
+MOVES 2
+
+# RESULT for part 3 contains a single boolean value.
+# This is a groundtruth value for this test indicating
+# whether the specified player can win in the
+# given number of total moves
+RESULT false
+
+# COMMENT----------------------------------------------
+# here's a good one to start with.  You can visually
+# see that player 1 can win in 3 total moves, as long
+# as he/she makes the correct first move (3,3).  At that
+# point, no matter what player 2 does, a winning final
+# move will remain.
+# Test7a shows that player1 can guarantee win in 3 total moves.
+# Test7b shows that player1 can not guarantee win in 1 total move.
+# Test7c shows that player2 can not guarantee win in 2 total moves.

@@ -1,0 +1,85 @@
+# CONFIG FILE FOR PATHBUILDER PROJECT PART 3 TESTING
+# Blank lines are ignored.  Lines beginning with # are ignored.
+# All other lines are processed.
+
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+# NOTE: THIS CONFIG FILE SHOULD NOT BE MODIFIED.
+# THE PARAMETERS AND CORRESPONDING RESULT ARE A SPECIFIC
+# TEST PROVIDED FOR YOU TO CHECK YOUR PART 3 SOLUTION.
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+# This config file format is intended for use with
+# Part3Test.java.
+
+# NOTE: the GUI is not used for part 3 testing.
+
+# NOTE: PLAYERS is not used in PART 3 config file.  The player
+# to be tested is instead provided via a command line argument
+# when running the program.  Also, TIMELIMIT is not specified
+# in the config file, but internally a 10 second limit
+# is used to limit the allowed computation by the player
+# for any method call.
+
+# PART must be present with value 3 to indicate that this
+# file is appropriate for PART 3 testing
+PART 3
+
+# DIM is used to indicate the size of the smaller dimension
+# of the grid of nodes for each player.
+# It must have an integer value in the range 3-20.
+# The larger dimension always has value DIM+1.
+# Both players nodes can be placed on an overall grid of
+# size (2*DIM+1) by (2*DIM+1).
+# DIM has a default value of 6 if it is not specified in
+# the configuration file.
+DIM 4
+
+# a PREMOVE is used to get the game started with
+# a specific move before calling the
+# HUMAN / player modules for moves.
+# a PREMOVE must have three comma-separated values,
+# with no spaces, indicating row, column and player id
+# for the move.
+# Multiple PREMOVE lines are allowed, and are processed in order.
+# An invalid PREMOVE will cause a game error.
+# PREMOVE lines are optional.
+PREMOVE 3,3,1
+PREMOVE 3,5,2
+PREMOVE 5,5,1
+PREMOVE 5,3,2
+PREMOVE 2,6,1
+PREMOVE 4,4,2
+PREMOVE 7,1,1
+PREMOVE 6,4,2
+
+# ID is used to indicate which player is being
+# queried.  It must have value 1 or 2.  It indicates
+# which player is checked for winnability.
+ID 1
+
+# MOVES is used to indicate how many total moves
+# maximum are allowed before the queried player
+# must be able to guarantee victory.  The player
+# to go next is determined by the premoves.  If
+# there are no specified premoves, player 1 gets
+# the first of these moves.  Otherwise, it is
+# the player who didn't make the last premove.
+# MOVES must have a value greater than or equal to 0.
+MOVES 9
+
+# RESULT for part 3 contains a single boolean value.
+# This is a groundtruth value for this test indicating
+# whether the specified player can win in the
+# given number of total moves
+RESULT false
+
+# COMMENT-----------------------------------------------------
+# Showing player 1 can win from scratch is
+# probably beyond our computational capabilities
+# for a board of DIM 4.
+# I think you could ultimately show victory in 15 or 17 moves.
+# For this 8 move start, even though it looks like
+# the initial edge goes to player 2,
+# you can still show that player 1 has a guaranteed
+# victory in 11 moves.  (9 moves is not enough.)
+# The tests may take a couple minutes to complete.
